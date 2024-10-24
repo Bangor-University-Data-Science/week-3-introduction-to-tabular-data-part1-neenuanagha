@@ -9,4 +9,4 @@ def get_numerical_df(df, numerical_features):
     Returns:
         pd.DataFrame: DataFrame containing only numerical features.
     """
-   return df[df.select_dtypes(exclude=['object']).columns.to_list()]
+    return df[numerical_features]
